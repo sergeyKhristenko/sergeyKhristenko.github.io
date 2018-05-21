@@ -1,0 +1,147 @@
+body {
+    --background-color: #48898c;
+    --text: #4c4c4c;
+    --text-accent: #fefefe;
+    block-size: border-box;
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.contact-information {
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+
+ul {
+    padding-inline-start: 1rem;
+}
+
+ul > li {
+    margin-bottom: 0.5rem;
+}
+
+.left-column {
+    min-width: 300px;
+    background-color: #bab8b9;
+    background-color: var(--background-color);
+    color: var(--text-accent);
+    padding: 2rem 0;
+}
+
+.block {
+    margin: 3rem 0;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: .3em;
+}
+
+.skills {
+    margin: 1rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 0.9;
+    margin-top: 0;
+    margin-bottom: .1em;
+}
+
+.right-column {
+    flex-grow: 1;
+    margin: 2rem;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-title {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.contact-label {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.work {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.work .period {
+    min-width: 20ch;
+    text-align: right;
+}
+
+.work .work-description {
+    width: 100%;
+}
+
+.work .work-description .title-description {
+    display: flex;
+}
+
+.work .work-description .work-title {
+    flex: 1;
+}
+
+.work .work-description .company-name {
+    margin-top: 1rem;
+    color: var(--background-color)
+}
+
+.work .work-description .duty {
+    margin-top: .5rem;
+    color: var(--text);
+}
+
+.technologies {
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+
+    .left-column {
+        max-width: none;
+    }
+
+    .contact-information {
+        padding: 2rem;
+        background-color: white;
+        color: black;
+    }
+
+    .skills {
+        padding: 0 2rem;
+    }
+}
+
+@media print {
+    body{
+        -webkit-print-color-adjust:exact !important;
+        print-color-adjust:exact !important;
+    }
+
+    .right-column {
+        flex-grow: 1;
+        margin: 0 2rem;
+    }
+}
