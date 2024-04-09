@@ -145,4 +145,8 @@ ul > li {
         flex-grow: 1;
         margin: 0 2rem;
     }
+
+    @page {
+        size: 250mm 390mm;
+    }
 }
