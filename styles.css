@@ -15,6 +15,10 @@ body {
     color: black;
 }
 
+.contact-information .link {
+    word-break: break-all;
+}
+
 ul {
     padding-inline-start: 1rem;
 }
@@ -24,7 +28,7 @@ ul > li {
 }
 
 .left-column {
-    min-width: 300px;
+    min-width: 320px;
     background-color: #bab8b9;
     background-color: var(--background-color);
     color: var(--text-accent);
@@ -82,36 +86,37 @@ ul > li {
     margin-bottom: 3rem;
 }
 
-.work .period {
-    min-width: 20ch;
-    text-align: right;
-}
-
 .work .work-description {
     width: 100%;
 }
 
-.work .work-description .title-description {
+.work .work-description .company-description {
     display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: var(--background-color)
 }
 
 .work .work-description .work-title {
     flex: 1;
 }
 
-.work .work-description .company-name {
-    margin-top: 1rem;
-    color: var(--background-color)
-}
-
 .work .work-description .duty {
     margin-top: .5rem;
-    color: var(--text);
 }
 
 .technologies {
     margin-top: .5rem;
     font-size: .8rem;
+}
+
+.skills section{
+    margin: 1rem 0;
+}
+
+.skills-title {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 500px) {
@@ -147,6 +152,6 @@ ul > li {
     }
 
     @page {
-        size: 250mm 390mm;
+        size: 250mm 395mm;
     }
 }
